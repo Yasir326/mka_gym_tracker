@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Planner App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gym Planner App</h1>
+        <form id="userInfoForm">
+            <input type="number" id="weight" placeholder="Weight (kg)" required>
+            <input type="number" id="height" placeholder="Height (cm)" required>
+            <textarea id="goals" placeholder="Your fitness goals" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="workoutTracker" style="display: none;">
+            <h2>Workout Tracker</h2>
+            <input type="text" id="workoutName" placeholder="Workout name">
+            <input type="number" id="duration" placeholder="Duration (minutes)">
+            <button id="addWorkout">Add Workout</button>
+            <ul id="workoutList"></ul>
+        </div>
+        <div id="schedule" style="display: none;">
+            <h2>Your Schedule</h2>
+            <p id="scheduleContent"></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
